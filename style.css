@@ -166,6 +166,7 @@ header{
 {
     background: var(--color-bg1);
     height:80rem;
+    animation: slideInFromLeft  2s ease-in;
 }
 .categories h1{
     line-height: 1;
@@ -484,6 +485,7 @@ footer ul li a :hover
     /* Categories */
   .categories{
     height: auto;
+    animation: slideInFromLeft  400ms ease-in;
   }
   .categories__container
   {
@@ -595,7 +597,7 @@ footer ul li a :hover
   
   /* Apply the animation to elements with the .slide-in class */
   .slide-in {
-    animation: slideInFromLeft 0.9s ease;
+    animation: slideInFromLeft 1s ease;
   }
   
   /* Rest of your CSS styles go here */

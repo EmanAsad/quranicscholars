@@ -165,7 +165,7 @@ header{
 .categories
 {
     background: var(--color-bg1);
-    height:75rem;
+    height:80rem;
 }
 .categories h1{
     line-height: 1;
@@ -179,11 +179,12 @@ header{
 }
 .categories__left
 {
-
-    margin:4rem;
+    margin:3rem;
 }
 .categories__left p{
     margin: 1rem 0 3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 .categories__right 
 {
@@ -580,3 +581,22 @@ footer ul li a :hover
 
 
 }
+/* Define the keyframes animation */
+@keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the animation to elements with the .slide-in class */
+  .slide-in {
+    animation: slideInFromLeft 0.9s ease;
+  }
+  
+  /* Rest of your CSS styles go here */
+  
